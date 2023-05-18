@@ -1,23 +1,25 @@
 ---
     import { FOOTER } from "../config";
-        const { TEXT } = FOOTER;
+        const { TEXT, LINKS } = FOOTER;
 ---
 
 
 <footer class="flex items-stretch bg-slate-500 justify-center">
     <ul class="p-10">
-        <li>{TEXT.FEETER}</li>
-        <li>{TEXT.FEETER2}</li>
-        <li>{TEXT.FEETER3}</li>
+        <li class="font-bold">{TEXT.FOOTHEAD1}</li>
+        <a class="hover:underline decoration-solid" href = {LINKS.LINK1.HREF}>{LINKS.LINK1.CONTENT}</a>
+        <br>
+        <a class="hover:underline decoration-solid" href = {LINKS.LINK2.HREF}>{LINKS.LINK2.CONTENT}</a>
     </ul>
     <ul class="p-10">
-        <li>{TEXT.FEETER4}</li>
-        <li>{TEXT.FEETER5}</li>
-        <li>{TEXT.FEETER6}</li>
+        <li class="font-bold">{TEXT.FOOTHEAD2}</li>
+        <a class="hover:underline decoration-solid" href = {LINKS.LINK3.HREF}>{LINKS.LINK3.CONTENT}</a>
+        <br>
     </ul>
     <ul class="p-10">
-        <li>{TEXT.FEETER7}</li>
-        <li>{TEXT.FEETER8}</li>
-        <li>{TEXT.FEETER9}</li>
+        <li class="font-bold">{TEXT.FOOTHEAD3}</li>
+        <a class="hover:underline decoration-solid" href = {LINKS.LINK5.HREF}>{LINKS.LINK5.CONTENT}</a>
+        <br>
+        <a class="hover:underline decoration-solid" href = {LINKS.LINK6.HREF}>{LINKS.LINK6.CONTENT}</a>
     </ul>
 </footer>

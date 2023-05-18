@@ -1,8 +1,9 @@
 ---
-import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import Section1 from '../components/section1.astro';
+import Section2 from '../components/section2.astro';
 ---
 
 <html lang="en">
@@ -11,16 +12,14 @@ import Section1 from '../components/section1.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Your Mom's Business</title>
+		<title>Your Name Here</title>
 	</head>
 
 	<body>
 		<Header/>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
+		<Hero/>
 		<Section1/>
+		<Section2/>
 		<Footer/>
 	</body>
 </html>

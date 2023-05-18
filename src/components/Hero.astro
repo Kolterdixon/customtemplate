@@ -1,0 +1,17 @@
+---
+import { HERO } from '../config';
+    const { TEXT, IMAGES } = HERO;
+---
+
+<div class="max-w-full w-screen">
+<section class="">
+    <div>
+        <div class="w-2/5 absolute inset-x-1/2 inset-y-1/2">
+            <h1 class="text-5xl text-white ">{TEXT.NAME}</h1>
+        </div>
+        <div>
+            <img src={IMAGES.HERO.SRC} alt={IMAGES.HERO.ALT}/>
+        </div>
+    </div>
+</section>
+</div>

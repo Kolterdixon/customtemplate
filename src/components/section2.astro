@@ -1,0 +1,28 @@
+---
+import { SECTION2 } from '../config';
+    const { IMAGES, TEXT } = SECTION2
+
+---
+
+<div class="w-full inline-grid sm:grid-cols-2 max-h-full">
+    <section class="py-10 col-span-1 justify-self-center w-3/5">
+    <br>
+    <h1 class="sm:text-5xl font-bold underline decoration-2">{TEXT.BIGHEADER}</h1>
+    <br>
+    <h1 class="font-semibold sm:text-3xl">{TEXT.HEADER1}</h1>
+    <br>
+    <div class="sm:text-lg">{TEXT.SERVICE1}</div>
+    <br>
+    <h1 class="font-semibold sm:text-3xl">{TEXT.HEADER2}</h1>
+    <br>
+    <div class="sm:text-lg">{TEXT.SERVICE2}</div>
+    <br>
+    <h1 class="font-semibold sm:text-3xl">{TEXT.HEADER3}</h1>
+    <br>
+    <div class="sm:text-lg">{TEXT.SERVICE3}</div>
+    </section>
+    <section class="md:max-sm:w-3/5 sm:rounded-l-lg sm:bg-slate-400">
+        <br>
+        <img class="rounded-lg p-10" src={IMAGES.IMAGE.SRC} alt={IMAGES.IMAGE.ALT}>
+    </section>
+</div>

@@ -1,0 +1,40 @@
+---
+import { PROJECTS } from "../config";   
+    const { TEXT, IMAGES } = PROJECTS;
+---
+
+<div class="my-24 mx-10">
+    <h1 class="mb-16 text-5xl font-bold">
+        {TEXT.TITLE}
+    </h1>
+    <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <li class=""> 
+            <a class="" href="/">
+                <img class="ease-out duration-150 rounded-[25px] hover:rounded-[45px]" src={IMAGES.PROJECT1.SRC} alt={IMAGES.PROJECT1.ALT}>
+                <h3 class="text-3xl font-bold mt-4 mb-4 ml-6">{TEXT.PROJECT1HEAD}</h3>
+                <p class="ml-6">{TEXT.PROJECT1CONTENT}</p>
+            </a>   
+        </li>
+        <li class="">
+            <a class="" href="/">
+                <img class="ease-out duration-150 rounded-[25px] hover:rounded-[45px]" src={IMAGES.PROJECT2.SRC} alt={IMAGES.PROJECT2.ALT}>
+                <h3 class="text-3xl font-bold mt-4 mb-4 ml-6">{TEXT.PROJECT2HEAD}</h3>
+                <p class="ml-6">{TEXT.PROJECT2CONTENT}</p>
+            </a>
+        </li>
+        <li class="">
+            <a class="" href="/">
+                <img class="ease-out duration-150 rounded-[25px] hover:rounded-[45px]" src={IMAGES.PROJECT3.SRC} alt={IMAGES.PROJECT3.ALT}>
+                <h3 class="text-3xl font-bold mt-4 mb-4 ml-6">{TEXT.PROJECT3HEAD}</h3>
+                <p class="ml-6">{TEXT.PROJECT3CONTENT}</p>
+            </a>
+        </li>
+        <li class="">
+            <a class="" href="/">
+                <img class="ease-out duration-150 rounded-[25px] hover:rounded-[45px]" src={IMAGES.PROJECT4.SRC} alt={IMAGES.PROJECT4.ALT}>
+                <h3 class="text-3xl font-bold mt-4 mb-4 ml-6">{TEXT.PROJECT4HEAD}</h3>
+                <p class="ml-6">{TEXT.PROJECT4CONTENT}</p>
+            </a>
+        </li>
+    </ul>
+</div>
