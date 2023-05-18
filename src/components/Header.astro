@@ -1,0 +1,13 @@
+---
+    import { NAVCONTENT } from "../config";
+    const { LINKS } = NAVCONTENT;
+---
+
+<header class="">
+    <h1 class="bg-slate-500 fixed w-full text-center">Your Name Here</h1>
+    <br>
+        <nav class="bg-slate-500 w-full justify-center py-4 fixed">
+            <a class="py-4 p-8 hover:bg-slate-300 font-bold" href= {LINKS.LINK1.HREF}>{LINKS.LINK1.CONTENT}</a>
+            <a class="py-4 p-8 hover:bg-slate-300 font-bold" href= {LINKS.LINK2.HREF}>{LINKS.LINK2.CONTENT}</a>
+        </nav>
+</header>
